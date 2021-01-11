@@ -1,0 +1,16 @@
+.header {
+    &__burger {
+        height: 44px;
+        width: 44px;
+        background-color: var(--color-burger);
+        color: var(--color-white);
+    }
+    &__title {
+        font-family: var(--font-family-slab);
+        font-size: 42px;
+    }
+    &__subtitle {
+        font-family: var(--font-family-roboto);
+        font-size: 16px;
+    }
+}

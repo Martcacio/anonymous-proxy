@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.link__adalab:hover {
+  background-color: #099d8d;
+  color: #fff; }
+
+.link__github:hover {
+  background-color: #CCC;
+  color: #000; }
+
+:root {
+  --font-family-roboto: 'Roboto', sans-serif;
+  --font-family-slab: 'Roboto Slab', serif;
+  --color-burger: #0271bc;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-buttons-orange: #f26002;
+  --font-color-grey: #4a4a4a;
+  --font-color-tips: #8ccbea;
+  --color-reasons: #eff9ff;
+  --color-footer: #304268; }
+
+.header__burger {
+  height: 44px;
+  width: 44px;
+  background-color: var(--color-burger);
+  color: var(--color-white); }
+
+.header__title {
+  font-family: var(--font-family-slab);
+  font-size: 42px; }
+
+.header__subtitle {
+  font-family: var(--font-family-roboto);
+  font-size: 16px; }
+
+.tips__small {
+  font-family: var(--font-family-roboto);
+  color: var(--font-color-tips);
+  font-size: 14px; }
+
+.tips__title {
+  font-family: var(--font-family-slab);
+  font-size: 24px; }
+
+.tips__description {
+  font-family: var(--font-family-roboto);
+  color: var(--font-color-grey);
+  font-size: 18px; }
+
+.tips__button {
+  height: 45px;
+  width: 76px;
+  border-radius: 22.5px;
+  border: solid 2px var(--color-buttons-orange);
+  background-color: var(--color-white);
+  color: var(--color-buttons-orange);
+  font-family: var(--font-family-roboto);
+  font-size: 20px; }
+
+.reasons {
+  background-color: aqua;
+  /*background-color: var(--color-reasons);*/ }
+  .reasons__title {
+    font-family: var(--font-family-slab);
+    font-size: 24px; }
+  .reasons__article--title {
+    font-family: var(--font-family-slab);
+    font-size: 18px; }
+  .reasons__article--description {
+    font-family: var(--font-family-roboto);
+    font-size: 18px; }
+  .reasons__button {
+    height: 45px;
+    width: 184px;
+    border-radius: 22.5px;
+    border: 0;
+    color: var(--color-white);
+    background-color: var(--color-buttons-orange);
+    font-family: var(--font-family-roboto);
+    font-size: 20px; }
+
+.footer {
+  background-color: var(--color-footer); }
+  .footer__list {
+    font-family: var(--font-family-roboto);
+    color: var(--color-white);
+    font-size: 16px; }
+  .footer__copyright {
+    font-family: var(--font-family-roboto);
+    color: var(--color-white);
+    font-size: 14px; }
+  .footer__small {
+    font-family: var(--font-family-roboto);
+    color: var(--color-white);
+    font-size: 14px; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,28 @@
+.reasons {
+    background-color: aqua;
+    /*background-color: var(--color-reasons);*/
+    &__title {
+        font-family: var(--font-family-slab);
+        font-size: 24px;
+    }
+    &__article {
+        &--title {
+            font-family: var(--font-family-slab);
+            font-size: 18px;
+        }
+        &--description {
+            font-family: var(--font-family-roboto);
+            font-size: 18px;
+        }
+    }
+    &__button {
+        height: 45px;
+        width: 184px;
+        border-radius: 22.5px;
+        border: 0;
+        color: var(--color-white);
+        background-color: var(--color-buttons-orange);
+        font-family: var(--font-family-roboto);
+        font-size: 20px;
+    }
+}

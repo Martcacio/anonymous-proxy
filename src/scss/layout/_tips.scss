@@ -1,0 +1,27 @@
+.tips {
+    &__small {
+        font-family: var(--font-family-roboto);
+        color: var(--font-color-tips);
+        font-size: 14px;
+    }
+    &__title {
+        font-family: var(--font-family-slab);
+        font-size: 24px;
+    }
+    &__description {
+        font-family: var(--font-family-roboto);
+        color: var(--font-color-grey);
+        font-size: 18px;
+    }
+    &__button {
+        height: 45px;
+        width: 76px;
+        border-radius: 22.5px;
+        border: solid 2px var(--color-buttons-orange);
+        background-color: var(--color-white);
+        color: var(--color-buttons-orange);
+        ;
+        font-family: var(--font-family-roboto);
+        font-size: 20px;
+    }
+}
