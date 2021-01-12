@@ -7,7 +7,7 @@
                 align-items: center;
                 justify-content: center;
                 @media all and (min-width: 768px) {
-                    padding: 30px 40px 60px 40px;
+                    padding: 30px 35.7px 60px 40px;
                     display: grid;
                     height: 397px;
                     grid-template-columns: 1fr 1fr 1fr;
@@ -29,16 +29,16 @@
                     text-align: center;
                     @media all and (min-width: 768px) {
                         font-size: 26px;
-                        grid-column: span 3;
+                        grid-column: 2/3;
                     }
                     @media all and (min-width: 1200px) {
+                        width: 730px;
                         font-size: 32px;
-                        grid-column: span 3;
                     }
                 }
                 &__article1 {
                     @media all and (min-width: 768px) {
-                        grid-area: 'column1 column2 column3';
+                        grid-column: 1/2;
                     }
                     &--title {
                         @include title();
@@ -49,7 +49,7 @@
                 }
                 &__article2 {
                     @media all and (min-width: 768px) {
-                        grid-area: 'column1 column2 column3';
+                        grid-column: 2/3;
                     }
                     &--title {
                         @include title();
@@ -60,7 +60,7 @@
                 }
                 &__article3 {
                     @media all and (min-width: 768px) {
-                        grid-area: 'column1 column2 column3';
+                        grid-column: 3/4;
                     }
                     &--title {
                         @include title();
@@ -87,11 +87,11 @@
                     }
                     @media all and (min-width: 768px) {
                         width: 210px;
-                        grid-column: span 3;
+                        grid-column: 3/4;
+                        grid-rows: 3/4;
                     }
                     @media all and (min-width: 1200px) {
                         width: 225px;
-                        grid-column: span 3;
                     }
                 }
             }
