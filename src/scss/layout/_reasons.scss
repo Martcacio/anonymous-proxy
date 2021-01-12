@@ -78,8 +78,7 @@
                     background-color: var(--color-buttons-orange);
                     font-family: var(--font-family-roboto);
                     font-size: 20px;
-                    grid-column: span 1;
-                    transition: color background-color border ease 1s;
+                    transition: color ease 1s;
                     &:hover {
                         color: var(--color-buttons-orange);
                         background-color: var(--color-reasons);
@@ -87,8 +86,8 @@
                     }
                     @media all and (min-width: 768px) {
                         width: 210px;
-                        grid-column: 3/4;
-                        grid-rows: 3/4;
+                        grid-column: 2/3;
+                        grid-row: 3/4;
                     }
                     @media all and (min-width: 1200px) {
                         width: 225px;

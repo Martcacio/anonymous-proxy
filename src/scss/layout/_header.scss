@@ -76,6 +76,17 @@
         justify-content: center;
         align-items: center;
         margin-bottom: 53px;
+        /* animation: move 2s infinite alternate-reverse;
+         @keyframes move2 {
+            from {
+                top: 0;
+                opacity: 0;
+            }
+            to {
+                top: 20px;
+                opacity: 1;
+            }
+        }*/
     }
     @media all and (min-width: 768px) {
         margin-bottom: 45px;

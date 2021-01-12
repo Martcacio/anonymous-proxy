@@ -29,22 +29,21 @@
                     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
                     margin: auto;
                     position: relative;
-                    top: -39px;
                     animation: move 2s infinite alternate-reverse;
                     @keyframes move {
                         from {
-                            top: -20px;
+                            top: -39px;
                             opacity: 0;
                         }
                         to {
-                            top: 20px;
+                            top: 0px;
                             opacity: 1;
                         }
                     }
                     @media all and (min-width: 768px) {
                         grid-row: span 1;
                         grid-column: 1/6;
-                        top: -67px;
+                        /*top: -67px;*/
                     }
                 }
                 &__list1 {

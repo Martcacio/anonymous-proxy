@@ -50,7 +50,7 @@
             color: var(--color-buttons-orange);
             font-family: var(--font-family-roboto);
             font-size: 20px;
-            transition: color background-color ease 1s;
+            transition: color ease 1s;
             &:hover {
                 color: var(--color-white);
                 background-color: var(--color-buttons-orange);
