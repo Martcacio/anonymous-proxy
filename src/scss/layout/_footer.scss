@@ -11,7 +11,7 @@
                     display: grid;
                     height: 240px;
                     grid-template-columns: 1fr 30px 1fr 30px 1fr;
-                    grid-template-rows: 1fr 1fr 1fr;
+                    grid-template-rows: 30px 1fr;
                     padding: 45px 39px 45px 39px;
                     text-align: left;
                 }
@@ -29,21 +29,25 @@
                     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
                     margin: auto;
                     position: relative;
+                    transform: translate(0px, -39px);
                     animation: move 2s infinite alternate-reverse;
                     @keyframes move {
                         from {
-                            top: -39px;
+                            top: -10px;
                             opacity: 0;
                         }
                         to {
-                            top: 0px;
+                            top: 10px;
                             opacity: 1;
                         }
                     }
                     @media all and (min-width: 768px) {
                         grid-row: span 1;
-                        grid-column: 1/6;
-                        /*top: -67px;*/
+                        grid-column: 3/4;
+                        transform: translate(0px, -39px);
+                    }
+                    @media all and (min-width: 768px) {
+                        transform: translate(0px, -71px);
                     }
                 }
                 &__list1 {
