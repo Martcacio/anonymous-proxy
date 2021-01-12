@@ -1,37 +1,67 @@
-.tips {
-    padding: 30px 15px 45px 15px;
-    &__small {
-        font-family: var(--font-family-roboto);
-        color: var(--font-color-tips);
-        font-size: 14px;
-        height: 30px;
-        width: 90px;
-        margin-bottom: 1px;
+    .tips {
+        padding: 30px 15px 45px 15px;
+        @media all and (min-width: 768px) {
+            padding: 30px 39px 60px 39px;
+        }
+        @media all and (min-width: 1200px) {
+            padding: 90px 275px 60px 275px;
+        }
+        &__small {
+            font-family: var(--font-family-roboto);
+            color: var(--font-color-tips);
+            font-size: 14px;
+            margin-bottom: 1px;
+            @media all and (min-width: 768px) {
+                margin-bottom: 0;
+            }
+            @media all and (min-width: 1200px) {
+                font-size: 16px;
+            }
+        }
+        &__title {
+            font-family: var(--font-family-slab);
+            font-size: 24px;
+            margin-bottom: 15px;
+            text-transform: capitalize;
+            @media all and (min-width: 768px) {
+                font-size: 26px;
+                margin-bottom: 30px;
+            }
+            @media all and (min-width: 1200px) {
+                font-size: 32px;
+            }
+        }
+        &__description {
+            font-family: var(--font-family-roboto);
+            color: var(--font-color-grey);
+            font-size: 18px;
+            margin-bottom: 30px;
+            line-height: 30px;
+            @media all and (min-width: 768px) {
+                font-size: 20px;
+            }
+        }
+        &__button {
+            height: 45px;
+            width: 76px;
+            border-radius: 22.5px;
+            border: solid 2px var(--color-buttons-orange);
+            background-color: var(--color-white);
+            color: var(--color-buttons-orange);
+            font-family: var(--font-family-roboto);
+            font-size: 20px;
+            transition: color background-color ease 1s;
+            &:hover {
+                color: var(--color-white);
+                background-color: var(--color-buttons-orange);
+            }
+            @media all and (min-width: 768px) {
+                height: 45px;
+                width: 91px;
+            }
+            @media all and (min-width: 1200px) {
+                height: 45px;
+                width: 160px;
+            }
+        }
     }
-    &__title {
-        font-family: var(--font-family-slab);
-        font-size: 24px;
-        line-height: 1.25;
-        width: 290px;
-        height: 60px;
-        margin-bottom: 15px;
-        text-transform: capitalize;
-    }
-    &__description {
-        font-family: var(--font-family-roboto);
-        color: var(--font-color-grey);
-        font-size: 18px;
-        margin-bottom: 30px;
-        line-height: 1.67;
-    }
-    &__button {
-        height: 45px;
-        width: 76px;
-        border-radius: 22.5px;
-        border: solid 2px var(--color-buttons-orange);
-        background-color: var(--color-white);
-        color: var(--color-buttons-orange);
-        font-family: var(--font-family-roboto);
-        font-size: 20px;
-    }
-}

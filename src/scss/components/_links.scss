@@ -1,4 +1,6 @@
     .link {
-        text-decoration: none;
-        color: var(--color-white);
+        &__list {
+            text-decoration: none;
+            color: var(--color-white);
+        }
     }

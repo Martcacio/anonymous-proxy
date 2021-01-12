@@ -1,58 +1,88 @@
-.footer {
-    background-color: var( --color-footer);
-    padding: 60px 0 45px 0;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    &__circle {
-        height: 45px;
-        width: 45px;
-        background-color: var(--color-white);
-        border-radius: 50px;
+    @import "core/variables";
+    .footer {
+        background-color: var( --color-footer);
+        padding: 15px 0 45px 0;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        text-align: center;
         align-items: center;
-        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-        margin: auto;
-        position: relative;
-        top: -84px;
+        justify-content: center;
+        @media all and (min-width: 768px) {
+            display: grid;
+            height: 240px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            padding: 45px 39px 45px 39px;
+            text-align: left;
+        }
+        @media all and (min-width: 1200px) {
+            padding: 45px 370px 45px 370px;
+        }
+        &__circle {
+            height: 45px;
+            width: 45px;
+            background-color: var(--color-white);
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+            margin: auto;
+            position: relative;
+            top: -39px;
+            animation: move 2s infinite alternate-reverse;
+            @keyframes move {
+                from {
+                    top: -20px;
+                    opacity: 0;
+                }
+                to {
+                    top: 20px;
+                    opacity: 1;
+                }
+            }
+            @media all and (min-width: 768px) {
+                grid-row: span 1;
+                grid-column: 1/4;
+                top: -67px;
+            }
+        }
+        &__list1 {
+            @include list();
+            width: 73px;
+            @media all and (min-width: 768px) {
+                margin-bottom: 0;
+                grid-column: 2/3;
+                grid-row: 2/4;
+            }
+        }
+        &__list2 {
+            @include list();
+            width: 147px;
+            @media all and (min-width: 768px) {
+                margin-bottom: 60px;
+                grid-column: 3/4;
+                grid-row: 2/4;
+            }
+        }
+        &__copyright {
+            height: 30px;
+            width: 77px;
+            font-family: var(--font-family-roboto);
+            color: var(--color-white);
+            font-size: 14px;
+            grid-row: 1/2;
+        }
+        &__small {
+            height: 30px;
+            width: 290px;
+            font-family: var(--font-family-roboto);
+            color: var(--color-white);
+            font-size: 14px;
+            grid-row: 2/3;
+        }
     }
-    &__list1 {
-        height: 150px;
-        width: 73px;
-        font-family: var(--font-family-roboto);
-        color: var(--color-white);
-        font-size: 16px;
-        margin-bottom: 30px;
-        line-height: 1.88;
-        text-transform: uppercase;
-        list-style: none;
+    
+    .fa-heart {
+        color: var(--color-buttons-orange);
     }
-    &__list2 {
-        height: 90px;
-        width: 147px;
-        font-family: var(--font-family-roboto);
-        color: var(--color-white);
-        font-size: 16px;
-        margin-bottom: 30px;
-        line-height: 1.88;
-        text-transform: uppercase;
-        list-style: none;
-    }
-    &__copyright {
-        height: 30px;
-        width: 77px;
-        font-family: var(--font-family-roboto);
-        color: var(--color-white);
-        font-size: 14px;
-    }
-    &__small {
-        height: 30px;
-        width: 290px;
-        font-family: var(--font-family-roboto);
-        color: var(--color-white);
-        font-size: 14px;
-    }
-}
