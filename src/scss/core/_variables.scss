@@ -21,11 +21,11 @@
          }
          
          @mixin list() {
-             width: 73px;
              font-family: var(--font-family-roboto);
              color: var(--color-white);
              font-size: 16px;
-             margin-bottom: 30px;
+             margin-top: 15px;
+             margin-bottom: 15px;
              line-height: 1.88;
              text-transform: uppercase;
              list-style: none;
