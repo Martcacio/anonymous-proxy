@@ -1,4 +1,13 @@
     .link {
+        &__burger {
+            padding: 15px 15px;
+        }
+        &__header {
+            padding: 10px 10px;
+        }
+        &__footer {
+            padding: 10px 10px;
+        }
         &__list {
             text-decoration: none;
             color: var(--color-white);
