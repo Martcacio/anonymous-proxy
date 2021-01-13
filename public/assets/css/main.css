@@ -100,17 +100,24 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 53px;
-    /* animation: move 2s infinite alternate-reverse;
-         @keyframes move2 {
-            from {
-                top: 0;
-                opacity: 0;
-            }
-            to {
-                top: 20px;
-                opacity: 1;
-            }
-        }*/ }
+    position: relative;
+    animation: header 2s infinite alternate-reverse; }
+
+@-webkit-keyframes header {
+  from {
+    top: 0;
+    opacity: 0; }
+  to {
+    top: 80px;
+    opacity: 1; } }
+
+@keyframes header {
+  from {
+    top: 0;
+    opacity: 0; }
+  to {
+    top: 80px;
+    opacity: 1; } }
   @media all and (min-width: 768px) {
     .header {
       margin-bottom: 45px; } }
@@ -125,7 +132,7 @@
       padding: 30px 39px 60px 39px; } }
   @media all and (min-width: 1200px) {
     .tips {
-      padding: 90px 275px 60px 275px; } }
+      padding: 60px 275px 60px 275px; } }
   .tips__small {
     font-family: var(--font-family-roboto);
     color: var(--font-color-tips);
