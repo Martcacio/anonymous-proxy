@@ -50,6 +50,10 @@
             color: var(--color-buttons-orange);
             font-family: var(--font-family-roboto);
             font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
             transition: color ease 1s;
             &:hover {
                 color: var(--color-white);

@@ -1,17 +1,14 @@
             .reasons {
                 background-color: var(--color-reasons);
                 padding: 30px 15px 60px 15px;
-                display: flex;
-                flex-direction: column;
                 text-align: center;
-                align-items: center;
-                justify-content: center;
                 @media all and (min-width: 768px) {
                     padding: 30px 35.7px 60px 40px;
                     display: grid;
                     height: 397px;
                     grid-template-columns: 1fr 1fr 1fr;
                     grid-template-rows: 1fr 1fr 1fr;
+                    grid-template-areas: "reasons reasons reasons" "column1 column2 column3" "button button button";
                 }
                 @media all and (min-width: 1200px) {
                     padding: 60px 85px 60px 81.2px;
@@ -19,26 +16,21 @@
                 }
                 &__title {
                     height: 30px;
-                    width: 290px;
                     font-family: var(--font-family-slab);
                     font-size: 24px;
                     margin-bottom: 45px;
                     text-transform: capitalize;
-                    display: flex;
-                    justify-content: center;
-                    text-align: center;
                     @media all and (min-width: 768px) {
                         font-size: 26px;
-                        grid-column: 2/3;
+                        grid-area: reasons;
                     }
                     @media all and (min-width: 1200px) {
-                        width: 730px;
                         font-size: 32px;
                     }
                 }
                 &__article1 {
                     @media all and (min-width: 768px) {
-                        grid-column: 1/2;
+                        grid-area: column1;
                     }
                     &--title {
                         @include title();
@@ -49,7 +41,7 @@
                 }
                 &__article2 {
                     @media all and (min-width: 768px) {
-                        grid-column: 2/3;
+                        grid-area: column2;
                     }
                     &--title {
                         @include title();
@@ -60,7 +52,7 @@
                 }
                 &__article3 {
                     @media all and (min-width: 768px) {
-                        grid-column: 3/4;
+                        grid-area: column3;
                     }
                     &--title {
                         @include title();
@@ -79,6 +71,10 @@
                     font-family: var(--font-family-roboto);
                     font-size: 20px;
                     transition: color ease 1s;
+                    text-decoration: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     &:hover {
                         color: var(--color-buttons-orange);
                         background-color: var(--color-reasons);
@@ -86,8 +82,8 @@
                     }
                     @media all and (min-width: 768px) {
                         width: 210px;
-                        grid-column: 2/3;
-                        grid-row: 3/4;
+                        grid-area: button;
+                        margin: auto;
                     }
                     @media all and (min-width: 1200px) {
                         width: 225px;

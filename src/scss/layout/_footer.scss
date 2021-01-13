@@ -8,12 +8,10 @@
                 align-items: center;
                 justify-content: center;
                 @media all and (min-width: 768px) {
-                    display: grid;
                     height: 240px;
-                    grid-template-columns: 1fr 30px 1fr 30px 1fr;
-                    grid-template-rows: 30px 1fr;
                     padding: 45px 39px 45px 39px;
                     text-align: left;
+                    flex-direction: row;
                 }
                 @media all and (min-width: 1200px) {
                     padding: 45px 370px 45px 370px;
@@ -34,16 +32,12 @@
                     @keyframes move {
                         from {
                             top: -10px;
-                            opacity: 0;
                         }
                         to {
                             top: 10px;
-                            opacity: 1;
                         }
                     }
                     @media all and (min-width: 768px) {
-                        grid-row: span 1;
-                        grid-column: 3/4;
                         transform: translate(0px, -39px);
                     }
                     @media all and (min-width: 768px) {
@@ -56,8 +50,6 @@
                     @media all and (min-width: 768px) {
                         width: 210px;
                         margin-bottom: 0;
-                        grid-column: 3/4;
-                        grid-row: 2/4;
                     }
                     @media all and (min-width: 1200px) {
                         width: 161px;
@@ -69,39 +61,26 @@
                     @media all and (min-width: 768px) {
                         width: 210px;
                         margin-bottom: 60px;
-                        grid-column: 5/6;
-                        grid-row: 2/4;
                     }
                     @media all and (min-width: 1200px) {
                         width: 159px;
                     }
                 }
                 &__copyright {
-                    height: 30px;
-                    width: 77px;
                     font-family: var(--font-family-roboto);
                     color: var(--color-white);
                     font-size: 14px;
-                    grid-row: 1/2;
                     @media all and (min-width: 768px) {
                         width: 210px;
+                        order: -1;
+                        margin-bottom: 97px;
                     }
                     @media all and (min-width: 1200px) {
                         width: 159px;
                     }
-                }
-                &__small {
-                    height: 30px;
-                    width: 290px;
-                    font-family: var(--font-family-roboto);
-                    color: var(--color-white);
-                    font-size: 14px;
-                    grid-row: 2/3;
-                    @media all and (min-width: 768px) {
-                        width: 210px;
-                    }
-                    @media all and (min-width: 1200px) {
-                        width: 159px;
+                    &--text {
+                        display: block;
+                        line-height: 1.88;
                     }
                 }
             }
