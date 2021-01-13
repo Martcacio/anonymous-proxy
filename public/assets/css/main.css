@@ -172,7 +172,7 @@
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    transition: color ease 1s; }
+    transition: all ease 1s; }
     .tips__button:hover {
       color: var(--color-white);
       background-color: var(--color-buttons-orange); }
@@ -283,7 +283,7 @@
     background-color: var(--color-buttons-orange);
     font-family: var(--font-family-roboto);
     font-size: 20px;
-    transition: color ease 1s;
+    transition: color ease 1s, background-color ease 1s;
     text-decoration: none;
     display: flex;
     justify-content: center;

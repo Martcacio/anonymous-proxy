@@ -54,7 +54,7 @@
             justify-content: center;
             align-items: center;
             text-decoration: none;
-            transition: color ease 1s;
+            transition: all ease 1s;
             &:hover {
                 color: var(--color-white);
                 background-color: var(--color-buttons-orange);
