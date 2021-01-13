@@ -4,7 +4,7 @@
   padding: 0; }
 
 .link__burger {
-  padding: 15px 15px; }
+  padding: 30px 28px; }
 
 .link__header {
   padding: 10px 10px; }
@@ -118,12 +118,6 @@
   to {
     top: 80px;
     opacity: 1; } }
-  @media all and (min-width: 768px) {
-    .header {
-      margin-bottom: 45px; } }
-  @media all and (min-width: 1200px) {
-    .header {
-      margin-bottom: 13px; } }
 
 .tips {
   padding: 30px 15px 45px 15px; }
