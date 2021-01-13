@@ -75,6 +75,7 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    margin: auto;
                     &:hover {
                         color: var(--color-buttons-orange);
                         background-color: var(--color-reasons);
