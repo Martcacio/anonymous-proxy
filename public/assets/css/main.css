@@ -287,7 +287,8 @@
     text-decoration: none;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    margin: auto; }
     .reasons__button:hover {
       color: var(--color-buttons-orange);
       background-color: var(--color-reasons);
