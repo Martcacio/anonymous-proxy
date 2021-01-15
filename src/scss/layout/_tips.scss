@@ -1,5 +1,7 @@
     .tips {
-        padding: 30px 15px 45px 15px;
+        padding: 50px 15px 45px 15px;
+        display: flex;
+        flex-direction: column;
         @media all and (min-width: 768px) {
             padding: 30px 39px 60px 39px;
         }
@@ -26,9 +28,11 @@
             @media all and (min-width: 768px) {
                 font-size: 26px;
                 margin-bottom: 30px;
+                order: -1;
             }
             @media all and (min-width: 1200px) {
                 font-size: 32px;
+                order: 0;
             }
         }
         &__description {
@@ -45,19 +49,20 @@
             height: 45px;
             width: 76px;
             border-radius: 22.5px;
-            border: solid 2px var(--color-buttons-orange);
-            background-color: var(--color-white);
-            color: var(--color-buttons-orange);
+            border: 0;
+            color: var(--color-white);
+            background-color: var(--color-buttons-orange);
             font-family: var(--font-family-roboto);
             font-size: 20px;
             display: flex;
             justify-content: center;
             align-items: center;
             text-decoration: none;
-            transition: all ease 1s;
+            transition: color ease 1s;
             &:hover {
-                color: var(--color-white);
-                background-color: var(--color-buttons-orange);
+                color: var(--color-buttons-orange);
+                background-color: var(--color-reasons);
+                border: solid 2px var(--color-buttons-orange);
             }
             @media all and (min-width: 768px) {
                 height: 45px;

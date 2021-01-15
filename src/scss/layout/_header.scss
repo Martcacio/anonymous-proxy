@@ -68,13 +68,11 @@
         }
     }
     &__circle {
+        display: none;
         height: 45px;
         width: 45px;
         background-color: var(--color-white);
         border-radius: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         margin-bottom: 53px;
         position: relative;
         animation: header 2s infinite alternate-reverse;
@@ -87,6 +85,11 @@
                 top: 80px;
                 opacity: 1;
             }
+        }
+        @media all and (min-width: 768px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 }

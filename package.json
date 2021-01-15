@@ -4,6 +4,7 @@
 	"description": "Adalab web starter kit",
 	"dependencies": {
 		"browser-sync": "^2.26.12",
+		"create-docs": "^2.0.0-alpha.2",
 		"del": "^5.1.0",
 		"eslint": "^7.1.0",
 		"gulp": "^4.0.2",
